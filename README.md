@@ -12,7 +12,7 @@ a Streamlit application for predicting sentiment from new reviews.
 - Jackson Ball — Analyst
 - Abhinav Siriguri — Team Lead
 - Karan Tandra - ML Engineer
-- Adrelia Putridaryana - App Engineer
+- Ardelia Putridaryana - App Engineer
 
 ## Dataset
 We use a shared sample of 50,000 reviews from the
