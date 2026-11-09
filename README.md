@@ -7,10 +7,12 @@ We will compare classical and deep learning models and build
 a Streamlit application for predicting sentiment from new reviews.
 
 ## Team Members
-- Colin Wenzel — Project Lead, Data Engineer, Analyst/Writer
-- Name — Primary role
-- Name — Primary role
-- Name — Primary role
+- Colin Wenzel — Data Engineer
+- KC Luna — ML Engineer
+- Jackson Ball — Analyst
+- Abhinav Siriguri — Team Lead
+- Karan Tandra - ML Engineer
+- Adrelia Putridaryana - App Engineer
 
 ## Dataset
 We use a shared sample of 50,000 reviews from the
