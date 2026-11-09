@@ -11,14 +11,4 @@ https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews
 
 Filename: group_sample_seed48.csv
 
-## Main Columns
-
-- Text: Full review text
-- Summary: Short review summary
-- Score: Star rating from 1 to 5
-
-## Sentiment Labels
-
-- Negative: 1–2 stars
-- Neutral: 3 stars
-- Positive: 4–5 stars
+Can obtain this sample by following the sampling code in the carmen announcement
