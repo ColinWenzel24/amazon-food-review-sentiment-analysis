@@ -9,38 +9,19 @@ https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews
 
 ## Shared Group Sample
 
-Filename: group_sample_seed48.csv
+Filename: `group_sample_seed48.csv` (Group Psi, seed 48)
 
-How to obtain sample: 
+**Step 1 — Download the raw dataset (one time).**
+Go to https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews, sign in,
+and click Download. Unzip the archive; the file you need is `Reviews.csv`.
 
-Your group seed
+**Step 2 — Generate the group sample.** From the repo root (requires pandas):
 
-Group	Seed
-Group Psi	48
+```bash
+python3 data/make_sample.py                        # uses ~/Downloads/Reviews.csv
+python3 data/make_sample.py /path/to/Reviews.csv   # or a custom path
+```
 
-
-Step 1—Download the raw dataset (one time).
-
-Go to https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews, sign in, and click Download. Unzip the archive—the file you need is Reviews.csv.
-
-Step 2 — Run this script to generate your group sample
-
-Replace YOUR_SEED with your group's number and PATH_TO_REVIEWS_CSV with where you saved the file.
-
-import pandas as pd
-import os
-
-# --- EDIT THESE TWO LINES ---
-seed = YOUR_SEED                          # e.g. 42 for Group Alpha
-reviews_path = "PATH_TO_REVIEWS_CSV"     # e.g. "/Users/yourname/Downloads/Reviews.csv"
-# ----------------------------
-
-df = pd.read_csv(reviews_path)
-sample = df.sample(n=50000, random_state=seed)
-
-out_path = os.path.join(os.path.expanduser("~"), "Downloads", f"group_sample_seed{seed}.csv")
-sample.to_csv(out_path, index=False)
-
-print(f"Saved {len(sample)} rows to {out_path}")
-print(sample[['Score', 'Text']].head(3))
-The output file in your Downloads folder is your team's dataset for the entire project. Keep it—do not re-run with a different seed.
+This saves `data/group_sample_seed48.csv` (ignored by git). The first row
+printed should be Id 515539; If it matches, your sample is identical to
+everyone else's.
