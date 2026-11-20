@@ -1,0 +1,43 @@
+{
+  "model": "distilbert-base-uncased",
+  "test_size": 9253,
+  "accuracy": 0.8834972441370367,
+  "macro_precision": 0.7298889581680381,
+  "macro_recall": 0.7864344915412825,
+  "macro_f1": 0.7482090512070997,
+  "weighted_precision": 0.9097478331637592,
+  "weighted_recall": 0.8834972441370367,
+  "weighted_f1": 0.8937928096819838,
+  "majority_baseline_accuracy": 0.7795309629309413,
+  "training_minutes": 3.592337393760681,
+  "device": "AMD Radeon RX 9070 XT",
+  "per_class": {
+    "Negative": {
+      "precision": 0.8080495356037152,
+      "recall": 0.7843726521412472,
+      "f1": 0.7960350743423561,
+      "support": 1331
+    },
+    "Neutral": {
+      "precision": 0.40332458442694663,
+      "recall": 0.6502115655853314,
+      "f1": 0.4978401727861771,
+      "support": 709
+    },
+    "Positive": {
+      "precision": 0.9782927544734527,
+      "recall": 0.9247192568972689,
+      "f1": 0.950751906492766,
+      "support": 7213
+    }
+  },
+  "settings": {
+    "max_length": 256,
+    "batch_size": 32,
+    "epochs": 2,
+    "learning_rate": 3e-05,
+    "class_weights": true,
+    "seed": 48,
+    "quick_run": false
+  }
+}
