@@ -1,0 +1,18 @@
+# Python dependencies for the Amazon Food Review Sentiment Analysis project
+# Tested with Python 3.12
+# Install with: pip install -r requirements.txt
+
+# Data and classical models
+numpy==2.5.4
+pandas==3.1.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+
+# Deep model (DistilBERT)
+torch==2.9.1
+transformers==5.22.2
+accelerate==1.15.0
+
+# Notebooks and app
+jupyter==1.1.1
+streamlit==1.67.0
