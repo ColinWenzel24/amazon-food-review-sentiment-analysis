@@ -2,11 +2,16 @@
 # Tested with Python 3.12
 # Install with: pip install -r requirements.txt
 
+# Use the CPU-only PyTorch build on Linux (Streamlit Community Cloud has no GPU, and the
+# default CUDA build is several GB). GPU users training DistilBERT can install their own torch.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 # Data and classical models
 numpy==2.5.4
 pandas==3.1.1
-scikit-learn==1.9.1
+scikit-learn==1.9.1  # must match the version used to export models/*.joblib
 matplotlib==3.11.2
+joblib==1.6.0
 
 # Deep model (DistilBERT)
 torch==2.9.1
