@@ -1,0 +1,253 @@
+{
+  "model": "logistic_regression_tfidf",
+  "test_size": 9253,
+  "accuracy": 0.8677185777585648,
+  "macro_precision": 0.7137584162103879,
+  "macro_recall": 0.5934982383497519,
+  "macro_f1": 0.6240530592434536,
+  "weighted_precision": 0.8432842140783582,
+  "weighted_recall": 0.8677185777585648,
+  "weighted_f1": 0.8469061300728449,
+  "majority_baseline_accuracy": 0.7795309629309413,
+  "training_minutes": 0.1234240066667553,
+  "training_seconds": 7.405440400005318,
+  "device": "cpu",
+  "per_class": {
+    "Negative": {
+      "precision": 0.7774774774774775,
+      "recall": 0.6483846731780616,
+      "f1": 0.7070872593199509,
+      "support": 1331
+    },
+    "Neutral": {
+      "precision": 0.47186147186147187,
+      "recall": 0.153737658674189,
+      "f1": 0.23191489361702128,
+      "support": 709
+    },
+    "Positive": {
+      "precision": 0.8919362992922144,
+      "recall": 0.9783723831970054,
+      "f1": 0.9331570247933885,
+      "support": 7213
+    }
+  },
+  "labels": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "confusion_matrix": [
+    [
+      863,
+      59,
+      409
+    ],
+    [
+      154,
+      109,
+      446
+    ],
+    [
+      93,
+      63,
+      7057
+    ]
+  ],
+  "vocabulary_size": 38244,
+  "top_features": {
+    "Negative": [
+      [
+        "not",
+        4.3438
+      ],
+      [
+        "worst",
+        4.2151
+      ],
+      [
+        "awful",
+        3.9471
+      ],
+      [
+        "disappointing",
+        3.5299
+      ],
+      [
+        "terrible",
+        3.499
+      ],
+      [
+        "disappointed",
+        3.4299
+      ],
+      [
+        "yuck",
+        3.3529
+      ],
+      [
+        "threw",
+        3.2212
+      ],
+      [
+        "nasty",
+        3.069
+      ],
+      [
+        "horrible",
+        3.0336
+      ],
+      [
+        "waste",
+        2.9313
+      ],
+      [
+        "poor",
+        2.8736
+      ],
+      [
+        "even",
+        2.6887
+      ],
+      [
+        "disgusting",
+        2.6755
+      ],
+      [
+        "disappointment",
+        2.6599
+      ]
+    ],
+    "Neutral": [
+      [
+        "but",
+        5.3029
+      ],
+      [
+        "ok",
+        4.6725
+      ],
+      [
+        "okay",
+        3.9362
+      ],
+      [
+        "however",
+        3.314
+      ],
+      [
+        "average",
+        2.5101
+      ],
+      [
+        "not",
+        2.2026
+      ],
+      [
+        "stars",
+        1.9286
+      ],
+      [
+        "probably",
+        1.9277
+      ],
+      [
+        "unfortunately",
+        1.6933
+      ],
+      [
+        "prefer",
+        1.6406
+      ],
+      [
+        "taco",
+        1.5929
+      ],
+      [
+        "though",
+        1.5711
+      ],
+      [
+        "hoping",
+        1.4676
+      ],
+      [
+        "bit",
+        1.4495
+      ],
+      [
+        "problem",
+        1.4406
+      ]
+    ],
+    "Positive": [
+      [
+        "great",
+        7.8121
+      ],
+      [
+        "best",
+        6.5937
+      ],
+      [
+        "delicious",
+        6.2929
+      ],
+      [
+        "excellent",
+        5.5059
+      ],
+      [
+        "love",
+        5.3965
+      ],
+      [
+        "perfect",
+        4.7148
+      ],
+      [
+        "wonderful",
+        4.2454
+      ],
+      [
+        "good",
+        3.9402
+      ],
+      [
+        "yummy",
+        3.7146
+      ],
+      [
+        "loves",
+        3.7082
+      ],
+      [
+        "favorite",
+        3.2583
+      ],
+      [
+        "yum",
+        3.2563
+      ],
+      [
+        "awesome",
+        2.9603
+      ],
+      [
+        "happy",
+        2.9349
+      ],
+      [
+        "fantastic",
+        2.8555
+      ]
+    ]
+  },
+  "settings": {
+    "vectorizer": "TfidfVectorizer()",
+    "classifier": "LogisticRegression(max_iter=1000)",
+    "seed": 48,
+    "test_size": 0.2
+  },
+  "matches_notebook": true
+}
