@@ -12,7 +12,7 @@ a Streamlit application for predicting sentiment from new reviews.
 - Colin Wenzel — Data Engineer
 - KC Luna — ML Engineer
 - Jackson Ball — Analyst
-- Abhinav Siriguri — Team Lead
+- Abhinav Sirigiri — Team Lead
 - Karan Tandra - ML Engineer
 - Ardelia Putridaryana - App Engineer
 
@@ -29,7 +29,8 @@ https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews
 |---|---|---|---|---|---|
 | Majority baseline | — | 0.780 | 0.26 | 0.33 | 0.29 |
 | Logistic Regression | TF-IDF | 0.868 | 0.71 | 0.59 | 0.62 |
-| DistilBERT | fine-tuned transformer | 0.883 | 0.730 | 0.786 | 0.748 |
+| Naive Bayes | Bag of Words | 0.853 | 0.67 | 0.59 | 0.60 |
+| DistilBERT | fine-tuned transformer | 0.884 | 0.730 | 0.786 | 0.748 |
 
 The full comparison (with training time, per-class scores and confusion matrices) is in the app's
 **Model comparison** tab, generated from the JSON files in `results/`.
@@ -93,6 +94,7 @@ python data/make_sample.py /path/to/Reviews.csv   # writes data/group_sample_see
 - *DistilBERT:* `notebooks/DistilBERT_Training.ipynb` (GPU recommended, about 4 minutes on a modern GPU). The
   trained model is published at
   [thekluna/amazon-food-sentiment-distilbert](https://huggingface.co/thekluna/amazon-food-sentiment-distilbert).
+- *Naive Bayes:* `notebooks/Naive_Bayes.ipynb` (runs on a CPU in under a second).
 
 **4. Run the app**
 
